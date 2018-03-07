@@ -507,8 +507,8 @@ var ISOWEEKNUM = function (date) {
   // 判断当前年的第一天与date对象所指的日期的关系
   if ((firstOfCurrentYear.getDay() &gt; 4)
     // 这里是两个 `与` 符号, 不知道为什么被转成了这样
-    &amp;&amp; (currentDate.getMonth() === 0)
-    &amp;&amp; (currentDate.getDate() - firstOfCurrentYear.getDate()) &lt; 3) {
+    && (currentDate.getMonth() === 0)
+    && (currentDate.getDate() - firstOfCurrentYear.getDate()) &lt; 3) {
     firstOfCurrentYear = new Date(firstOfCurrentYear
       .setFullYear(firstOfCurrentYear.getFullYear() - 1));
   }
