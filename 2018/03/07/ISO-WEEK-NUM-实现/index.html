@@ -507,8 +507,8 @@ var ISOWEEKNUM = function (date) {
   // 判断当前年的第一天与date对象所指的日期的关系
   if ((firstOfCurrentYear.getDay() &gt; 4)
     // 这里是两个 `与` 符号, 不知道为什么被转成了这样
-    && (currentDate.getMonth() === 0)
-    && (currentDate.getDate() - firstOfCurrentYear.getDate()) &lt; 3) {
+    &amp;&amp; (currentDate.getMonth() === 0)
+    &amp;&amp; (currentDate.getDate() - firstOfCurrentYear.getDate()) &lt; 3) {
     firstOfCurrentYear = new Date(firstOfCurrentYear
       .setFullYear(firstOfCurrentYear.getFullYear() - 1));
   }
@@ -592,6 +592,14 @@ ISOWEEKNUM(new Date(2016, 2, 7))
             <!-- Post Prev & Next Nav -->
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
+    
+        <a href="/2018/03/10/Linux-安装-Node-js/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
     
 
     <!-- Section Spacer -->
@@ -683,7 +691,7 @@ ISOWEEKNUM(new Date(2016, 2, 7))
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
